@@ -1,0 +1,47 @@
+
+.Intro-Holder {
+    width: 100%;
+    height: 100%;
+
+    background-image: url('../../Images/Los_Angeles.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Intro {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.Intro-Text {
+    margin-top: 7.5%;
+    line-height: 200%;
+    color: white;
+}
+
+.Name {
+    font-size: 3rem;
+    font-family: 'Kross Neue Light';
+}
+
+.Roles {
+    font-size: 1.5rem;
+    font-family: 'Kross Neue Thin';
+}
+
+.Intro-Fade {
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    bottom: 0;
+}

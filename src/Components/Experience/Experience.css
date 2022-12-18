@@ -1,0 +1,161 @@
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.Experience-Container {
+    width: 100vw;
+    height: 100vh;
+    background: #EEEEEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Experience-Cards {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+
+.Card {
+    background-image: url('../../Images/CardBackground.svg');
+    background-size: cover;
+    background-position: center;
+
+    width: 20vw;
+    height: 28vw;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: 0.2s;
+}
+
+.Card:hover {
+    transform: translateY(-1rem);
+    transform: rotate(-20deg);
+}
+
+.Card-Top {
+    width: 3vw;
+    height: 6vw;
+    position: absolute;
+    top: 2.5vw;
+    left: 2.5vw;
+
+
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.Card-Center {
+    width: 30%;
+    height: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.Card-Bottom {
+    width: 3vw;
+    height: 6vw;
+    position: absolute;
+    bottom: 3vw;
+    right: 2.5vw;
+
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+}
+
+.Card-Category {
+    position: absolute;
+    bottom: 0;
+    right: 1.85vw;
+    width: 8vw;
+    height: 2vw;
+    font-family: 'Kross Neue Light';
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 1.25vw;
+}
+
+#TroyLabs .Card-Top {
+    background-image: url('../../Images/TLCard.svg');
+}
+
+#TroyLabs .Card-Center {
+    background-image: url('../../Images/TroyLabsLogo.svg');
+}
+
+#TroyLabs .Card-Bottom {
+    background-image: url('../../Images/TLCard.svg');
+}
+
+#Makers .Card-Top {
+    background-image: url('../../Images/MakersCard.svg');
+}
+
+#Makers .Card-Center {
+    background-image: url('../../Images/MakersLogo.svg');
+}
+
+#Makers .Card-Bottom {
+    background-image: url('../../Images/MakersCard.svg');
+}
+
+#AIM .Card-Top {
+    background-image: url('../../Images/AIMCard.svg');
+}
+
+#AIM .Card-Center {
+    background-image: url('../../Images/AIMLogo.svg');
+}
+
+#AIM .Card-Bottom {
+    background-image: url('../../Images/AIMCard.svg');
+}
+
+.Card-Back {
+    background-image: url('../../Images/CardBackground.svg');
+    background-size: cover;
+    background-position: center;
+
+
+    width: 20vw;
+    height: 28vw;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    position: relative;
+    transition: 0.2s;
+}
+
+.Card-Back-Top {
+    margin-top: 1vw;
+    color: white;
+    font-family: 'Kross Neue Light';
+    padding-left: 2vw;
+    padding-right: 2vw;
+    text-align: left;
+}
+
+.Card-Back-Top h4 {
+    margin: 1vw;
+    text-align: left;
+}

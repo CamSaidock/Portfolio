@@ -1,0 +1,6 @@
+.MainContent {
+    width: 100vw;
+    height: 54.8vw;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

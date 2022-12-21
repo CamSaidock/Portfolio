@@ -1,0 +1,85 @@
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all .5s;
+}
+
+.Projects-Container {
+    width: 100vw;
+    height: 100vh;
+    background: #EEEEEE;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: center;
+}
+
+.Project-Overview {
+    width: 60vw;
+    height: 45vw;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 0.025fr 10fr;
+
+}
+
+.Projects-Title {
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.Projects-Title h4 {
+    writing-mode: vertical-rl;
+    white-space: nowrap;
+    font-size: 1.5vw;
+    font-family: 'Kross Neue Light';
+}
+
+.Project {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s;
+    grid-column-start: 2;
+
+    box-shadow:
+    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07)
+    ;
+    
+}
+
+.Project:hover {
+    transform: scale(1.1);
+}
+
+
+#Project-One {
+    background-image: url('../../Images/Img5.svg');
+}
+
+#Project-Two {
+    background-image: url('../../Images/Img1.svg');
+}
+
+#Project-Three {
+    background-image: url('../../Images/Img4.svg');
+}
+
+#Project-Four {
+    background-image: url('../../Images/Img3.svg');
+}
+
+#Project-Five {
+    background-image: url('../../Images/Img2.svg');
+}

@@ -1,0 +1,83 @@
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.AboutDesc-Container {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    scroll-snap-align: center;
+}
+
+.AboutDesc-Holder {
+    width: 100vw;
+    height: 54.8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+}
+
+.AboutDesc-Image {
+    width: 34vw;
+    height: 33vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../Images/Img4.jpg');
+    position: absolute;
+
+    left: 0.5vw;
+    bottom: 0.5vw;
+}
+
+.Image-Border {
+    position: relative;
+    width: 34vw;
+    height: 33vw;
+    background: #852630;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow:
+    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07)
+    ;
+}
+
+
+.AboutDesc-Text {
+    margin-left: 4vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 45vw;
+    max-height: 30vw;
+    text-align: left;
+    font-size: 1.2vw;
+
+    transition-timing-function: linear;
+    transition: 0.5s;
+
+    color: black;
+    font-family: 'Kross Neue Book';
+}
+

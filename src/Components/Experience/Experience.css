@@ -13,49 +13,78 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    scroll-snap-align: center;
 }
 
 .Experience-Cards {
     width: 100vw;
-    height: 100vh;
+    height: 54.8vw;
+
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.Card-Container {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5vw;
+}
+
+.Card-Container h3 {
+    position: absolute;
+    bottom: -2vw;
+    right: 1vw;
+    font-family: 'Kross Neue Book';
 }
 
 .Card {
+    width: 18vw;
+    height: 27vw;
+    border-radius: 20px;
+
     background-image: url('../../Images/CardBackground.svg');
     background-size: cover;
     background-position: center;
-
-    width: 20vw;
-    height: 28vw;
-    border-radius: 20px;
 
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     transition: 0.2s;
+
+    cursor: pointer;
+
+    box-shadow:
+    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07)
+    ;
 }
 
-.Card:hover {
-    transform: translateY(-1rem);
-    transform: rotate(-20deg);
+.Card:hover:hover {
+    transform: translateY(-3vw);
 }
 
 .Card-Top {
     width: 3vw;
     height: 6vw;
     position: absolute;
-    top: 2.5vw;
-    left: 2.5vw;
+    top: 1.5vw;
+    left: 1.5vw;
 
 
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    filter: brightness(0) invert(1);
 }
 
 .Card-Center {
@@ -64,33 +93,21 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    filter: brightness(0) invert(1);
 }
 
 .Card-Bottom {
     width: 3vw;
     height: 6vw;
     position: absolute;
-    bottom: 3vw;
-    right: 2.5vw;
+    bottom: 1.5vw;
+    right: 1.5vw;
 
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     transform: rotate(180deg);
-}
-
-.Card-Category {
-    position: absolute;
-    bottom: 0;
-    right: 1.85vw;
-    width: 8vw;
-    height: 2vw;
-    font-family: 'Kross Neue Light';
-
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    font-size: 1.25vw;
+    filter: brightness(0) invert(1);
 }
 
 #TroyLabs .Card-Top {
@@ -129,33 +146,27 @@
     background-image: url('../../Images/AIMCard.svg');
 }
 
-.Card-Back {
-    background-image: url('../../Images/CardBackground.svg');
-    background-size: cover;
-    background-position: center;
-
-
-    width: 20vw;
-    height: 28vw;
-    border-radius: 20px;
-
-    display: flex;
-    justify-content: center;
-    align-items: top;
-    position: relative;
-    transition: 0.2s;
+#RHA .Card-Top {
+    background-image: url('../../Images/RHACard.svg');
 }
 
-.Card-Back-Top {
-    margin-top: 1vw;
-    color: white;
-    font-family: 'Kross Neue Light';
-    padding-left: 2vw;
-    padding-right: 2vw;
-    text-align: left;
+#RHA .Card-Center {
+    background-image: url('../../Images/RHALogo.svg');
 }
 
-.Card-Back-Top h4 {
-    margin: 1vw;
-    text-align: left;
+#RHA .Card-Bottom {
+    background-image: url('../../Images/RHACard.svg');
+}
+
+
+#Columbia .Card-Top {
+    background-image: url('../../Images/ColumbiaCard.svg');
+}
+
+#Columbia .Card-Center {
+    background-image: url('../../Images/ColumbiaLogo.svg');
+}
+
+#Columbia .Card-Bottom {
+    background-image: url('../../Images/ColumbiaCard.svg');
 }

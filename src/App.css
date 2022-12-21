@@ -13,10 +13,17 @@
   src: local("KrossNeueLight"), url('./Fonts/KrossNeueGrotesk-Thin\ copy.ttf');
 }
 
-.App {
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  height: 100vh;
+@font-face {
+  font-family: 'Kross Neue Bold';
+  src: local("KrossNeueBold"), url('./Fonts/KrossNeueGrotesk-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Kross Neue Heavy';
+  src: local("KrossNeueHeavy"), url('./Fonts/KrossNeueGrotesk-Heavy.ttf');
+}
+
+@font-face {
+  font-family: 'Kross Neue Book Italic';
+  src: local("KrossNeueBookItalic"), url('./Fonts/KrossNeueGrotesk-BookItalic.ttf');
 }

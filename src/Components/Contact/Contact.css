@@ -1,0 +1,9 @@
+.Contact-Container {
+    width: 100vw;
+    height: 100vh;
+    background: #EEEEEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: center;
+}

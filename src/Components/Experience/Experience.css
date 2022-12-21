@@ -1,0 +1,172 @@
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.Experience-Container {
+    width: 100vw;
+    height: 100vh;
+    background: #EEEEEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: center;
+}
+
+.Experience-Cards {
+    width: 100vw;
+    height: 54.8vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.Card-Container {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Card-Container h3 {
+    position: absolute;
+    bottom: -2vw;
+    right: 1vw;
+    font-family: 'Kross Neue Book';
+}
+
+.Card {
+    width: 18vw;
+    height: 27vw;
+    border-radius: 20px;
+
+    background-image: url('../../Images/CardBackground.svg');
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: 0.2s;
+
+    cursor: pointer;
+
+    box-shadow:
+    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07)
+    ;
+}
+
+.Card:hover:hover {
+    transform: translateY(-3vw);
+}
+
+.Card-Top {
+    width: 3vw;
+    height: 6vw;
+    position: absolute;
+    top: 1.5vw;
+    left: 1.5vw;
+
+
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: brightness(0) invert(1);
+}
+
+.Card-Center {
+    width: 30%;
+    height: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: brightness(0) invert(1);
+}
+
+.Card-Bottom {
+    width: 3vw;
+    height: 6vw;
+    position: absolute;
+    bottom: 1.5vw;
+    right: 1.5vw;
+
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    filter: brightness(0) invert(1);
+}
+
+#TroyLabs .Card-Top {
+    background-image: url('../../Images/TLCard.svg');
+}
+
+#TroyLabs .Card-Center {
+    background-image: url('../../Images/TroyLabsLogo.svg');
+}
+
+#TroyLabs .Card-Bottom {
+    background-image: url('../../Images/TLCard.svg');
+}
+
+#Makers .Card-Top {
+    background-image: url('../../Images/MakersCard.svg');
+}
+
+#Makers .Card-Center {
+    background-image: url('../../Images/MakersLogo.svg');
+}
+
+#Makers .Card-Bottom {
+    background-image: url('../../Images/MakersCard.svg');
+}
+
+#AIM .Card-Top {
+    background-image: url('../../Images/AIMCard.svg');
+}
+
+#AIM .Card-Center {
+    background-image: url('../../Images/AIMLogo.svg');
+}
+
+#AIM .Card-Bottom {
+    background-image: url('../../Images/AIMCard.svg');
+}
+
+#RHA .Card-Top {
+    background-image: url('../../Images/RHACard.svg');
+}
+
+#RHA .Card-Center {
+    background-image: url('../../Images/RHALogo.svg');
+}
+
+#RHA .Card-Bottom {
+    background-image: url('../../Images/RHACard.svg');
+}
+
+
+#Columbia .Card-Top {
+    background-image: url('../../Images/ColumbiaCard.svg');
+}
+
+#Columbia .Card-Center {
+    background-image: url('../../Images/ColumbiaLogo.svg');
+}
+
+#Columbia .Card-Bottom {
+    background-image: url('../../Images/ColumbiaCard.svg');
+}

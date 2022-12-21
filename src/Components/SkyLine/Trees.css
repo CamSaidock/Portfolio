@@ -1,0 +1,14 @@
+.Skyline {
+    position: fixed;
+    bottom: 0;
+
+    background-image: url('../../Images/LosAngelesSkyline.svg');
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: contain;
+
+    width: 100vw;
+    height: 22vw;
+
+    filter: invert(85%) sepia(1%) saturate(2%) hue-rotate(101deg) brightness(104%) contrast(102%);
+}

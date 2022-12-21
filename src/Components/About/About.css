@@ -1,9 +1,222 @@
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+.About-Container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: top;
+    scroll-snap-align: center;
+}
 
 .About-Holder {
-    width: 100%;
-    height: 200%;
-    background: #EEEEEE;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
+
+    position: sticky;
+    top: 0;
 }
+
+.About-Center-Holder {
+    width: 27.75vw;
+    height: 40vw;
+
+    display: grid;
+    grid-template-columns: 0.5fr 10fr;
+    grid-template-rows: 1.90fr 7fr 4fr;
+
+    transition-timing-function: linear;
+    transition: 0.5s;
+
+}
+
+.About-Text {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.About-Text h4 {
+    writing-mode: vertical-rl;
+    white-space: nowrap;
+    font-size: 1.5vw;
+    font-family: 'Kross Neue Light';
+    animation: marquee 10s linear infinite;
+}
+
+.About-Text:hover h4 {
+    animation-play-state: paused;
+}
+
+.About-Image {
+    background-image: url('../../Images/IntroImageTwo.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+
+    
+}
+
+.About-Side-Text {
+    margin-left: 2vw;
+    margin-top: -6vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    transition-timing-function: linear;
+    transition: 0.5s;
+}
+
+.About-Side-Text-Hide {
+    transition-timing-function: linear;
+    transition: 0.5s;
+    display: none;
+}
+
+.About-Title {
+    font-size: 4.5vw;
+    font-family: 'Kross Neue Heavy';
+    color: #852630;
+    text-align: left;
+    margin: 1vw;
+    margin-bottom: 0;
+    line-height: 4.7vw;
+}
+
+.About-Subtitle {
+    margin: 1vw;
+    margin-top: 1vw;
+    margin-left: 1.05vw;
+    text-align: left;
+    font-size: 2.25vw;
+    font-family: 'Kross Neue Book Italic';
+    color: black;
+}
+
+.Buttons {
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 1vw;
+    margin-top: 0.5vw;
+    gap: 1vw;
+    cursor: pointer;
+    
+}
+
+.Buttons div {
+    border-radius: 100%;
+    height: 3vw;
+    width: 3vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #EEEEEE;
+    cursor: pointer;
+}
+
+.GitHub {
+    background-image: url('../../Images/icons8-github-90.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: scale(1.1);
+}
+
+.GitHub:hover {
+    transform: scale(1.1) translateY(-0.5vw);
+}
+
+.LinkedIn {
+    background-image: url('../../Images/icons8-linkedin-circled-100.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.LinkedIn:hover {
+    transform: translateY(-0.5vw);
+}
+
+.Resume {
+    background-image: url('../../Images/icons8-resume-96.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Resume:hover {
+    transform: translateY(-0.5vw);
+}
+
+.About-Info-Text {
+    margin-left: 4vw;
+    margin-top: 2vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 50vw;
+    text-align: left;
+    font-size: 1.2vw;
+
+    transition-timing-function: linear;
+    transition: 0.5s;
+
+    color: black;
+    font-family: 'Kross Neue Book';
+}
+
+.About-Info-Text-Hide {
+    transition-timing-function: linear;
+    transition: 0.5s;
+    display: none;
+}
+
+.Bottom {
+    height: 5vh;
+    width: 100vw;
+    background: black;
+    position: relative;
+    top: 1%;
+}
+
+
+@keyframes marquee {
+    0% {
+        -moz-transform: translateY(100%);
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+    }
+    100% {
+        -moz-transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+}
+

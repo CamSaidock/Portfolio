@@ -15,7 +15,7 @@ function AboutDesc() {
     const headlineRef = useRef();
     const sectionRef = useRef();
 
-    useEffect(() => {
+    /*useEffect(() => {
         gsap.fromTo(
         headlineRef.current,
         {
@@ -37,7 +37,7 @@ function AboutDesc() {
         }
         );
         return () => {};
-    }, []);
+    }, []);*/
 
   return (
     <div className='AboutDesc-Container' ref={sectionRef}>

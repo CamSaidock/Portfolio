@@ -18,7 +18,7 @@ function About() {
 
   const headlineRef = useRef();
   const sectionRef = useRef();
-  useEffect(() => {
+  /*useEffect(() => {
     gsap.fromTo(
       headlineRef.current,
       {
@@ -40,7 +40,7 @@ function About() {
       }
     );
     return () => {};
-  }, []);
+  }, []);*/
 
   return (
     <div className='About-Container' ref={sectionRef}>

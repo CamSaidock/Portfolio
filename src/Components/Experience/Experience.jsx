@@ -15,7 +15,7 @@ function Experience() {
 
     const headlineRef = useRef();
     const sectionRef = useRef();
-    useEffect(() => {
+    /*useEffect(() => {
         gsap.fromTo(
         headlineRef.current,
         {
@@ -37,7 +37,7 @@ function Experience() {
         }
         );
         return () => {};
-    }, []);
+    }, []); */
 
 
   return (

@@ -6,38 +6,37 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-function Projects() {
-  useEffect(() => {
-    Aos.init({duration: 2000});
-}, []);
-
-const headlineRef = useRef();
-    const sectionRef = useRef();
+  function Projects() {
     useEffect(() => {
-        gsap.fromTo(
-        headlineRef.current,
-        {
-            autoAlpha: 0,
-            y: -20,
-        },
-        {
-            y: 0,
-            autoAlpha: 1,
-            duration: 1,
-            ease: "power3.out",
-            scrollTrigger: {
-            scroller: ".container",
-            trigger: headlineRef.current,
-            start: "top 60%",
-            end: "bottom 0%",
-            toggleActions: "play none restart reverse",
-            },
-        }
-        );
-        return () => {};
-    }, []);
+      Aos.init({duration: 2000});
+  }, []);
 
-//data-aos='zoom-in'
+  const headlineRef = useRef();
+  const sectionRef = useRef();
+  useEffect(() => {
+      gsap.fromTo(
+      headlineRef.current,
+      {
+          autoAlpha: 0,
+          y: -20,
+      },
+      {
+          y: 0,
+          autoAlpha: 1,
+          duration: 1,
+          ease: "power3.out",
+          scrollTrigger: {
+          scroller: ".container",
+          trigger: headlineRef.current,
+          start: "top 60%",
+          end: "bottom 0%",
+          toggleActions: "play none restart reverse",
+          },
+      }
+      );
+      return () => {};
+  }, []);
+
   return (
     <div className='Projects-Container' ref={sectionRef}>
         <div className='Project-Overview' ref={headlineRef}>

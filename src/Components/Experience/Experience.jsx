@@ -20,10 +20,10 @@ function Experience() {
         headlineRef.current,
         {
             autoAlpha: 0,
-            x: -40,
+            y: -20,
         },
         {
-            x: 0,
+            y: 0,
             autoAlpha: 1,
             duration: 1,
             ease: "power3.out",

@@ -38,14 +38,17 @@ function App() {
     <div className='container'>
       <Trees/>
       {loading === false ? (
-      <Routes>
-        <Route path="/" element={<MainContent />} />
-        <Route path="/Makers" element={<MakersInfo />} />
-        <Route path="/AIM" element={<AIMInfo />} />
-        <Route path="/TroyLabs" element={<TroylabsInfo />} />
-        <Route path="/RHA" element={<RHAInfo />} />
-        <Route path="/Columbia" element={<ColumbiaInfo />} />
-      </Routes>
+        <>
+          <Menu/>
+          <Routes>
+            <Route path="/" element={<MainContent />} />
+            <Route path="/Makers" element={<MakersInfo />} />
+            <Route path="/AIM" element={<AIMInfo />} />
+            <Route path="/TroyLabs" element={<TroylabsInfo />} />
+            <Route path="/RHA" element={<RHAInfo />} />
+            <Route path="/Columbia" element={<ColumbiaInfo />} />
+          </Routes>
+        </>
       ) : (
         <LoadingScreen />
       )}

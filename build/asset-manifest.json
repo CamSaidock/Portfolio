@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.445c6cce.css",
+    "main.js": "/static/js/main.3166f0e6.js",
+    "static/media/CardBackground.svg": "/static/media/CardBackground.ce83a57338b4001214c2.svg",
+    "static/media/Img4.jpg": "/static/media/Img4.5f3bb0806bc230665280.jpg",
+    "static/media/IntroImageTwo.svg": "/static/media/IntroImageTwo.ff5bf4606d86c3718400.svg",
+    "static/media/Img4.svg": "/static/media/Img4.db16787d9b96519ba6fc.svg",
+    "static/media/Img1.svg": "/static/media/Img1.091c794be12525d9c99b.svg",
+    "static/media/Img3.svg": "/static/media/Img3.7ff913382ef203236ce2.svg",
+    "static/media/Img5.svg": "/static/media/Img5.f51ee9a10a39dc26b8d7.svg",
+    "static/media/Img2.svg": "/static/media/Img2.917358cc5ecad244311f.svg",
+    "static/media/ColumbiaLogo.svg": "/static/media/ColumbiaLogo.5a45a8198b2b8d336f63.svg",
+    "static/media/RHACard.svg": "/static/media/RHACard.94bba44433521c9ea2f2.svg",
+    "static/media/ColumbiaCard.svg": "/static/media/ColumbiaCard.82ffb03b5e1ec033447b.svg",
+    "static/media/MakersCard.svg": "/static/media/MakersCard.8bdce81eeefd7f04cf61.svg",
+    "static/media/AIMCard.svg": "/static/media/AIMCard.f908e2bd24c1aeeb101e.svg",
+    "static/media/TLCard.svg": "/static/media/TLCard.e8110973a31f152b147a.svg",
+    "static/media/TroyLabsLogo.svg": "/static/media/TroyLabsLogo.6eaf0b62bd0dcc7eb681.svg",
+    "static/media/MakersLogo.svg": "/static/media/MakersLogo.0d694bb3ae1084d6a9be.svg",
+    "static/media/RHASidewaysLogo.svg": "/static/media/RHASidewaysLogo.ab970d66a1c3579cb1e7.svg",
+    "static/media/RHALogo.svg": "/static/media/RHALogo.8bbbb43839a926a3fafa.svg",
+    "static/media/AIMLogoUp.svg": "/static/media/AIMLogoUp.18f5a4b594e9b3a8aa58.svg",
+    "static/media/AIMLogo.svg": "/static/media/AIMLogo.44431d80dd9c8557bfc1.svg",
+    "static/media/LosAngelesSkyline.svg": "/static/media/LosAngelesSkyline.3b7906806066f82153a4.svg",
+    "static/media/rosebackground.png": "/static/media/rosebackground.4fb613d9ab49b6f3ae10.png",
+    "static/media/KrossNeueGrotesk-BookItalic.ttf": "/static/media/KrossNeueGrotesk-BookItalic.223ccf28b39535927b92.ttf",
+    "static/media/KrossNeueGrotesk-Heavy.ttf": "/static/media/KrossNeueGrotesk-Heavy.e82c9607cd894d43f452.ttf",
+    "static/media/KrossNeueGrotesk-Bold.ttf": "/static/media/KrossNeueGrotesk-Bold.d4f6d5002bb7d70e7cd7.ttf",
+    "static/media/KrossNeueGrotesk-Book copy.ttf": "/static/media/KrossNeueGrotesk-Book copy.8b605e2065596e614b0c.ttf",
+    "static/media/KrossNeueGrotesk-Light copy.ttf": "/static/media/KrossNeueGrotesk-Light copy.484e4d4d6c4a408d3c8e.ttf",
+    "static/media/KrossNeueGrotesk-Thin copy.ttf": "/static/media/KrossNeueGrotesk-Thin copy.570ff6d30c31e1bdbb14.ttf",
+    "index.html": "/index.html",
+    "main.445c6cce.css.map": "/static/css/main.445c6cce.css.map",
+    "main.3166f0e6.js.map": "/static/js/main.3166f0e6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.445c6cce.css",
+    "static/js/main.3166f0e6.js"
+  ]
+}

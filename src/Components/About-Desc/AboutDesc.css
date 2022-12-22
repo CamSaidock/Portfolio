@@ -81,3 +81,46 @@
     font-family: 'Kross Neue Book';
 }
 
+@media (max-width: 650px) {
+    .AboutDesc-Holder {
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 7vw;
+        position: relative;
+    }
+
+    .AboutDesc-Image {
+        width: 44vw;
+        height: 43vw;
+        margin-bottom: 1vw;
+        margin-left: 1vw;
+    }
+    
+    .Image-Border {
+        width: 44vw;
+        height: 43vw;
+        background: #852630;
+        margin-top: 12vw;
+        margin-left: -21vw;
+    }
+
+    .AboutDesc-Text {
+        margin-left: 0vw;
+        margin-top: 3vw;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        max-width: 65vw;
+        max-height: 50vw;
+        text-align: left;
+        font-size: 2.25vw;
+    
+        color: black;
+        font-family: 'Kross Neue Book';
+    }
+}

@@ -8,7 +8,6 @@ import Projects from '../Projects/Projects'
 import './MainContent.css'
 
 function MainContent() {
-
   return (
     <div className='MainContent'>
         <About/>

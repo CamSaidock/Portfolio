@@ -46,7 +46,7 @@
 .Card {
     width: 18vw;
     height: 27vw;
-    border-radius: 20px;
+    border-radius: 1.5vw;
 
     background-image: url('../../Images/CardBackground.svg');
     background-size: cover;
@@ -170,4 +170,41 @@
 
 #Columbia .Card-Bottom {
     background-image: url('../../Images/ColumbiaCard.svg');
+}
+
+@media (max-width: 650px) {
+    .Experience-Cards {
+        width: 60vw;
+        height: 80vh;
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        gap: 5vw;
+    }
+
+
+    .Card-Container {
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Card-Container h3 {
+        position: absolute;
+        bottom: -4vw;
+        right: 5%;
+        font-family: 'Kross Neue Book';
+        font-size: 3vw;
+    }
+
+    .Card {
+        width: 28vw;
+        height: 37vw;
+    }
+
 }

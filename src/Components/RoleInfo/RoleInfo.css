@@ -166,3 +166,133 @@
     filter: brightness(0) saturate(100%) invert(16%) sepia(38%) saturate(4207%) hue-rotate(334deg) brightness(93%) contrast(87%);
     cursor: pointer;
 }
+
+@media (max-width: 650px) {
+    .Role-Overview {
+        width: 90vw;
+        height: 90%;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        position: relative;
+        left: 0vw;
+        top: 0vw;
+        padding: 3vw;
+    }
+
+    .Role-Image {
+        grid-row-start: 2;
+        height: 30vw;
+        width: 100%;
+    }
+
+    .Role-Grid {
+        width: 100%;
+        height: 100%;
+    
+        display: grid;
+        grid-template-rows: 2fr 9fr;
+    }
+    
+    .Role-Title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 1vw;
+        position: relative;
+    }
+    
+    .Title-H1 {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        position: relative;
+    }
+    
+    .Role-Title h1 {
+        font-size: 10vw;
+        color: #852630;
+    }
+
+    .Role-Title h4 {
+        font-size: 3vw;
+    }
+
+    .Role-Description {
+        margin-top: 2vw;
+        width: 100%;
+        height: 60%;
+        display: grid;
+        grid-template-columns: 1fr 9fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+        gap: 1vw;
+    }
+
+    
+    .Role-Subimages {
+        margin: 0.75vw;
+        writing-mode: vertical-rl;
+        white-space: nowrap;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        color: #852630;
+        font-size: 3vw;
+        border-right: 0.5vw solid #852630;
+    }
+    
+    .Role-Bulletpoints {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        margin-left: 4vw;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    
+        font-size: 2.75vw;
+    }
+    
+    .Role-Bulletpoints ul li {
+        margin-bottom: 0.5vw;
+        list-style: circle;
+    }
+    
+    .Return-Button {
+        position: absolute;
+        right: 0;
+        width: 6vw;
+        height: 6vw;
+    
+        background-image: url('../../Images/icons8-left-2-100.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: brightness(0) saturate(100%) invert(16%) sepia(38%) saturate(4207%) hue-rotate(334deg) brightness(93%) contrast(87%);
+        cursor: pointer;
+    }
+
+    #MakersOverview {
+        gap: 0vw;
+        left: 0vw;
+    }
+
+    #AIMTitle h1 {
+        font-size: 4.5vw;
+    }
+    
+    #RHATitle h1 {
+        font-size: 4vw;
+    }
+
+    #RHALogo {
+        background-image: url('../../Images/RHALogo.svg');
+    }
+
+    #AIMLogo {
+        background-image: url('../../Images/AIMLogo.svg');
+    }
+}

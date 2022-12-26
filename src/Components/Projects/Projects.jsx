@@ -11,6 +11,10 @@ gsap.registerPlugin(ScrollTrigger);
       Aos.init({duration: 2000});
   }, []);
 
+  const openInNewTab = url => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
+
   const headlineRef = useRef();
   const sectionRef = useRef();
   useEffect(() => {
@@ -44,7 +48,7 @@ gsap.registerPlugin(ScrollTrigger);
               <h4>Projects (Updates in progress!)</h4>
             </div>
             <div className='Project' id="Project-One">
-
+              <h1 onClick={() => openInNewTab('https://open-ai-note-parser-s1h9.vercel.app/')}>AI Note Parser</h1>
             </div>
             <div className='Project' id="Project-Two">
                 

@@ -1,47 +1,11 @@
 import React, {useEffect, useRef, useState} from 'react'
-import Aos from 'aos'
-import "aos/dist/aos.css"
 import './AboutDesc.css'
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
 
 function AboutDesc() {
-    useEffect(() => {
-        Aos.init({duration: 2000});
-    }, []);
-
-
-    const headlineRef = useRef();
-    const sectionRef = useRef();
-
-    /*useEffect(() => {
-        gsap.fromTo(
-        headlineRef.current,
-        {
-            autoAlpha: 0,
-            y: -20,
-        },
-        {
-            y: 0,
-            autoAlpha: 1,
-            duration: 1,
-            ease: "power3.out",
-            scrollTrigger: {
-            scroller: ".container",
-            trigger: headlineRef.current,
-            start: "top 60%",
-            end: "bottom 0%",
-            toggleActions: "play none restart reverse",
-            },
-        }
-        );
-        return () => {};
-    }, []);*/
 
   return (
-    <div className='AboutDesc-Container' ref={sectionRef}>
-        <div className='AboutDesc-Holder' ref={headlineRef}>
+    <div className='AboutDesc-Container'>
+        <div className='AboutDesc-Holder'>
             <div className='Image-Border'>
                 <div className='AboutDesc-Image'/>
             </div>

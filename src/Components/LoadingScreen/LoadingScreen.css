@@ -5,7 +5,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    scroll-snap-align: center;
+    position: fixed;
+    background: #EEEEEE;
+    z-index: 20;
 }
 
 .Rose {

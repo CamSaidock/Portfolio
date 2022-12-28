@@ -38,7 +38,13 @@ function App() {
     <div className='container'>
       <Trees/>
       {loading === false ? (
+        <> </>
+      ) : (
         <>
+          <LoadingScreen/>
+        </>
+      )}
+      <>
           <Menu/>
           <Routes>
             <Route path="/" element={<MainContent />} />
@@ -49,27 +55,8 @@ function App() {
             <Route path="/Columbia" element={<ColumbiaInfo />} />
           </Routes>
         </>
-      ) : (
-        <LoadingScreen />
-      )}
-
     </div>
   );
 }
 
 export default App;
-
-/*
-
-<Routes>
-  <Route path="/" element={<MainContent />} />
-  <Route path="/Makers" element={<MakersInfo />} />
-  <Route path="/AIM" element={<AIMInfo />} />
-  <Route path="/TroyLabs" element={<TroylabsInfo />} />
-</Routes>
-
-function scrollTo(section) {
-    section.current.scrollIntoView({ behavior: "smooth" });
-  }
-
-*/

@@ -1,49 +1,15 @@
 import {React, useEffect, useRef} from 'react'
-import Aos from 'aos'
-import "aos/dist/aos.css"
 import './Projects.css'
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
 
   function Projects() {
-    useEffect(() => {
-      Aos.init({duration: 2000});
-  }, []);
 
   const openInNewTab = url => {
     window.open(url, '_blank', 'noopener,noreferrer');
   };
 
-  const headlineRef = useRef();
-  const sectionRef = useRef();
-  useEffect(() => {
-      gsap.fromTo(
-      headlineRef.current,
-      {
-          autoAlpha: 0,
-          y: -20,
-      },
-      {
-          y: 0,
-          autoAlpha: 1,
-          duration: 1,
-          ease: "power3.out",
-          scrollTrigger: {
-          scroller: ".container",
-          trigger: headlineRef.current,
-          start: "top 60%",
-          end: "bottom 0%",
-          toggleActions: "play none restart reverse",
-          },
-      }
-      );
-      return () => {};
-  }, []);
-
   return (
-    <div className='Projects-Container' ref={sectionRef}>
-        <div className='Project-Overview' ref={headlineRef}>
+    <div className='Projects-Container'>
+        <div className='Project-Overview'>
             <div className='Projects-Title'>
               <h4>Projects (Updates in progress!)</h4>
             </div>

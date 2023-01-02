@@ -11,22 +11,21 @@ import './Projects.css'
     <div className='Projects-Container'>
         <div className='Project-Overview'>
             <div className='Projects-Title'>
-              <h4>Projects (Updates in progress!)</h4>
             </div>
             <div className='Project' id="Project-One">
               <h1 onClick={() => openInNewTab('https://open-ai-note-parser-s1h9.vercel.app/')}>AI Note Parser</h1>
             </div>
             <div className='Project' id="Project-Two">
-                
+              <h1 onClick={() => openInNewTab('https://twitter-sentiment-analysis-three.vercel.app/')}>Twitter Analysis</h1>
             </div>
             <div className='Project' id="Project-Three">
-                
+              <h1 onClick={() => openInNewTab('https://github.com/CamSaidock/Schedule-Optimizer-and-Wordle-Solver')}>Wordle Solver</h1>
             </div>
             <div className='Project' id="Project-Four">
-                
+              <h1 onClick={() => openInNewTab('https://github.com/CamSaidock/BST-and-AVL-Implementation')}>BST & AVL</h1>
             </div>
             <div className='Project' id="Project-Five">
-                
+              <h1 onClick={() => openInNewTab('https://github.com/CamSaidock/Cpp-Amazon-Clone')}>Amazon Clone</h1>
             </div>
         </div>
     </div>
